@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseLife Gym – Membership</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="{{ url_for('home') }}" class="logo">Pulse<span>Life</span></a>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+      <li><a href="{{ url_for('membership') }}">Membership</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <section style="background:#222222; color:#ffffff; text-align:center; padding:60px 20px;">
+    <h1 style="font-size:36px; margin-bottom:12px;">Membership Plans</h1>
+    <p style="color:#bbbbbb; font-size:15px;">Flexible options for every lifestyle and budget. Cancel anytime.</p>
+  </section>
+
+  <!-- PLANS -->
+  <section class="section">
+    <div class="cards">
+
+      <!-- BASIC -->
+      <div class="card">
+        <p class="plan-name">Starter</p>
+        <p class="price">$22<span style="font-size:15px; font-weight:normal; color:#888;">/mo</span></p>
+        <ul>
+          <li>Gym floor access</li>
+          <li>Locker + showers</li>
+          <li>Member app access</li>
+        </ul>
+        <button class="btn-select">Select Plan</button>
+      </div>
+
+      <!-- STANDARD -->
+      <div class="card">
+        <p class="plan-name">Active</p>
+        <p class="price">$38<span style="font-size:15px; font-weight:normal; color:#888;">/mo</span></p>
+        <ul>
+          <li>All Starter features</li>
+          <li>Unlimited group classes</li>
+          <li>1 guest pass/month</li>
+        </ul>
+        <button class="btn-select">Select Plan</button>
+      </div>
+
+      <!-- PREMIUM (highlighted) -->
+      <div class="card highlight">
+        <p class="plan-name">✦ Popular</p>
+        <p class="price">$58<span style="font-size:15px; font-weight:normal; color:#aaa;">/mo</span></p>
+        <ul>
+          <li>All Active features</li>
+          <li>2 PT sessions/month</li>
+          <li>Nutrition bar discount</li>
+        </ul>
+        <button class="btn-select">Select Plan</button>
+      </div>
+
+      <!-- PRO -->
+      <div class="card">
+        <p class="plan-name">Elite</p>
+        <p class="price">$85<span style="font-size:15px; font-weight:normal; color:#888;">/mo</span></p>
+        <ul>
+          <li>All Popular features</li>
+          <li>Unlimited PT sessions</li>
+          <li>Steam room + priority</li>
+        </ul>
+        <button class="btn-select">Select Plan</button>
+      </div>
+
+    </div>
+
+    <!-- NOTE -->
+    <p style="text-align:center; font-size:13px; color:#888888; margin-top:32px;">All plans include a free 7-day trial. No contracts. Cancel anytime with 30 days notice.</p>
+  </section>
+
+  <!-- FAQ STRIP -->
+  <section class="section" style="padding-top:0;">
+    <h2 class="section-title">Common Questions <span></span></h2>
+    <div class="about-wrap">
+      <div class="about-text">
+        <h3>Can I switch plans later?</h3>
+        <p>Yes! You can upgrade or downgrade your membership at any time through the PulseLife member app or by visiting the front desk. Changes take effect the following billing cycle.</p>
+      </div>
+      <div class="about-text">
+        <h3>Is there a joining fee?</h3>
+        <p>New members pay a one-time registration fee of $10. This covers your access card, welcome pack, and your first fitness assessment with one of our certified trainers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 PulseLife Gym &nbsp;|&nbsp; <a href="#">Contact</a> <a href="#">Privacy</a> <a href="#">Terms</a></p>
+  </footer>
+
+</body>
+</html>

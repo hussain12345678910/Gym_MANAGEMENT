@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseLife Gym – Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="{{ url_for('home') }}" class="logo">Pulse<span>Life</span></a>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+      <li><a href="{{ url_for('membership') }}">Membership</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Feel the <span>Pulse.</span><br>Live the Life.</h1>
+    <p>PulseLife is a welcoming fitness community for all levels. From your very first workout to your next personal record — we are here with you every step of the way.</p>
+    <a href="{{ url_for('membership') }}" class="btn">Get Started Today</a>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <h2 class="section-title">Everything You Need <span></span></h2>
+    <div class="feature-grid">
+      <div class="feature-box">
+        <h3>🏋️ Modern Equipment</h3>
+        <p>Cardio machines, strength stations, stretching zones, and a fully stocked free-weights area for every type of workout.</p>
+      </div>
+      <div class="feature-box">
+        <h3>👥 Group Classes</h3>
+        <p>Join Zumba, HIIT, Yoga, Spin, and more. Over 20 classes per week led by certified and energetic instructors.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📱 Member App</h3>
+        <p>Book classes, track your workouts, set goals, and connect with the PulseLife community — all from your phone.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🥗 Nutrition Bar</h3>
+        <p>Fuel your body right. Our in-gym nutrition bar serves healthy smoothies, protein shakes, and fresh snacks daily.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🛁 Clean Facilities</h3>
+        <p>Spotless locker rooms, steam rooms, and showers. We maintain the highest standards of hygiene and comfort.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🕐 Flexible Hours</h3>
+        <p>Open from 5 AM to midnight, seven days a week. Fit your workouts around your life, not the other way around.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 PulseLife Gym &nbsp;|&nbsp; <a href="#">Contact</a> <a href="#">Privacy</a> <a href="#">Terms</a></p>
+  </footer>
+
+</body>
+</html>
